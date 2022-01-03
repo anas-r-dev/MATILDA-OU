@@ -8,9 +8,7 @@ This guide presents an overview of using the High Performance Computing (HPC) sy
 ## Prerequisites
 
 For following through, users must have an account at netid@hpc-login.oakland.edu cluster. If you have netid you can get your account [here at **Matilda HPC Cluster Access Request**](https://www.oakland.edu/uts/efficient-processes-forms/forms/) 
-(https://github.com/gabeclass/introlinux).
 
-In particular, it's helpful to be able to edit basic files on a Linux system.  A simple text editor for this purpose found on almost all Linux systems is [nano](https://www.nano-editor.org/).
 
 ## Useful links
 
