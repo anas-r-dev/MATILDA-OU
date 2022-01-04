@@ -17,5 +17,3 @@ For following through, users must have an account at netid@hpc-login.oakland.edu
 ## Authorship
 
 The guide has been taken from Princeton University modified for Matilda by Muhammad Anas Raza
-[Click here](https://bit.ly/hpcintro_24feb20)
--->
