@@ -34,26 +34,23 @@ cluster is called a **node**, and we commonly talk about two types of nodes: **h
 
 |![Diagram with Terminology](images/beowulf.png)|
 |:--:|
-|*Typical architecture of a Princeton Research Computing cluster.*|
+|*Architecture of a Oakland University Matilda High Performance cluster.*|
 
 ## Terminology
 
-* **Head Node** - The head node is the computer where we land when we log in to the cluster. This is where we edit scripts, compile code, and submit jobs to the scheduler. The head nodes are shared with other users and jobs should not be run on the head nodes themselves.
-* **Compute Node** - The compute nodes are the computers where jobs should be run. In order to run jobs on the compute nodes we must go through the job scheduler. By submitting jobs to the job scheduler, the jobs will automatically be run on the compute nodes once the requested resources are available. The Princeton clusters use SLURM as their scheduling program and we will get back to this in a later section.
+* **Login Node** - The login node is the computer where we land when we log in to the cluster. This is where we edit scripts, compile code, and submit jobs to the scheduler. The login nodes are shared with other users and jobs should not be run on the login nodes themselves.
+* **Standard Compute Nodes** - The compute nodes are the computers where jobs should be run. In order to run jobs on the compute nodes we must go through the job scheduler. By submitting jobs to the job scheduler, the jobs will automatically be run on the compute nodes once the requested resources are available. Matilda uses SLURM as their scheduling program and we will get back to this in a later section. There are 40 compute nodes on Matilda
+* **High Throughout nodes** - These nodes have 8 cores (40 as compared with standard compute nodes) but have more clock speeds (3.80 GHz). There are 10 throughput nodes on Matilda
+* **Big Memory Nodes** - These nodes have more memory than throughput and compute nodes. 768 GB as compared to 192 GB for compute/throughput/hybrid nodes. Matilda has 4 Big Memory Nodes
+* **Large Memory Node** - Matilda has one large memory node with 1.5 TB of memory.
+* **Hybrid Nodes** - These nodes have capability to add GPUs. But currently they are same as standard compute nodes.
+* **GPU Nodes** - Have 4 NVIDIA Tesla V100 16G GPUs
 * **Cores** - A shorthand way to refer to the number of processor cores (usually physical) of a CPU in a node.
 
-## How Do Princeton's HPC Clusters Work?
+## How Does Matilda Work?
 
 To have your program run on the clusters, you can start a **job** on the head node. A job consists of the the following files:
 1. your code that runs your program
 2. a separate script, known as a SLURM script, that will request the resources your job requires in terms of the amount of memory, the number of cores, number of nodes, etc. As mentioned previously, Princeton uses a scheduler called **SLURM**, which is why this script is referred to as your SLURM script.
 
 Once your files are submitted, the **scheduler** takes care of figuring out when the resources you requested will become available on the compute nodes. Once resources become available, the scheduler runs your program on the compute nodes.
-
-### Important Notes on Using Princeton's HPC Clusters
-
-1. **The 10-10 Rule.**  
-First, it's important to know that you may run test jobs on the head nodes that run for up to **10 minutes** and use up to **10% of the CPU cores and memory**. You will likely disrupt the work of others if you exceed these limits, and you may be contaced by our system administrators if you exceed these rules.
-
-2. **No Internet Access on the Compute Nodes**  
-Second, it's important to know that there is no internet access on the compute nodes. This is for security reasons. This means that when you submit your job (your program + your slurm script) to be run on the cluster, those jobs cannot involve any steps that require an internet connection to work. For example, downloading data from a site, scraping websites, downloading packages, etc., will not work on the compute nodes. **You need to make sure all needed files are present on the cluster before submitting the job to the scheduler.**
