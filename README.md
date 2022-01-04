@@ -1,6 +1,5 @@
 # Getting Started with the High Performance Computing Cluster (MATILDA)
 
-Note: This repo has been forked from Princeton HPC and modified for OU Matilda
 
 ## About
 This guide presents an overview of using the High Performance Computing (HPC) systems at Oakland University. Specifically, it explains how to use Matilda. 
@@ -16,4 +15,4 @@ For following through, users must have an account at netid@hpc-login.oakland.edu
 
 ## Authorship
 
-The guide has been taken from Princeton University modified for Matilda by Muhammad Anas Raza
+The guide has been taken from [Princeton University](https://github.com/PrincetonUniversity/hpc_beginning_workshop) modified for Matilda by Muhammad Anas Raza
