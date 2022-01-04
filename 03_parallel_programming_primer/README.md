@@ -8,7 +8,6 @@ This guide will provide a very basic introduction to parallel programming concep
 
 We will provide a brief introduction to the hardware and terms relevant for parallel computing, along with an overview of four common methods of parallelism. This guide will not teach *how* to implement parallelism in your code but rather will point to the relevant resources for learning.
 
-For a more comprehensive introduction to parallel programming concepts, check [Research Computing's workshop schedule](https://researchcomputing.princeton.edu/learn/workshops-live-training) for the next *Primer on Parallel Programming* workshop, or view [materials and recordings from past workshops](https://researchcomputing.princeton.edu/learn/workshops-live-training/archives-past-workshops).
 
 ## Serial versus Parallel Programming
 
