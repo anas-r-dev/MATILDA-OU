@@ -1,13 +1,12 @@
 # Effective Usage of the Cluster Resources
 
-The more resources you request, the longer your job will spend in the queue waiting for the resources to become available. Try to specifiy your minimum requirements. Here are the key pieces:
+Here are the key pieces:
 
 - Number of CPU-cores  
 - Amount of time required to run the job  
 - Amount of memory (RAM) needed  
 - Number of GPUs (if any)  
 
-For parallel codes, one needs to carry out a scaling analysis as described on [Choosing the Number of Nodes, CPU-cores and GPUs](https://researchcomputing.princeton.edu/support/knowledge-base/scaling-analysis). See [Allocating Memory](https://researchcomputing.princeton.edu/support/knowledge-base/memory) to learn how to estimate and set your memory requirements.
 
 ## How to Find the Optimal Number of Threads for Multithreaded Codes
 
@@ -56,7 +55,7 @@ Here is an appropriate Slurm script:
 hostname
 lscpu | grep "Model name"
 
-module load anaconda3/2020.7
+module load miniconda3
 
 srun python svd_np.py
 ```
