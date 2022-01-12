@@ -15,4 +15,4 @@ For following through, users must have an account at netid@hpc-login.oakland.edu
 
 ## Authorship
 
-The guide has been taken from [Princeton University](https://github.com/PrincetonUniversity/hpc_beginning_workshop) modified for Matilda by Muhammad Anas Raza
+The guide has been taken from [Princeton University](https://github.com/PrincetonUniversity/hpc_beginning_workshop) modified for Matilda at Oakland University by [Muhammad Anas Raza](https://linkedin.com/in/memanasraza)
